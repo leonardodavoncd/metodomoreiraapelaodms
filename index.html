@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrar no Servidor — metodomoreiraapelaodms</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --accent: #00ffcc;
+      --accent-2: #0077ff;
+      --text: #ffffff;
+      --text-dim: #aaaaaa;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, var(--accent-2)10%, var(--bg)70%);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .logo {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px var(--accent);
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: var(--text-dim);
+      margin-bottom: 2rem;
+    }
+    .input-area {
+      display: flex;
+      gap: 10px;
+      background: rgba(255,255,255,0.05);
+      padding: 10px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+    }
+    input {
+      background: none;
+      border: 1px solid var(--accent);
+      color: var(--text);
+      padding: 10px;
+      border-radius: 6px;
+      width: 250px;
+      outline: none;
+      transition: 0.2s;
+    }
+    input:focus {
+      border-color: var(--accent-2);
+      box-shadow: 0 0 10px var(--accent-2);
+    }
+    button {
+      background: linear-gradient(45deg, var(--accent), var(--accent-2));
+      border: none;
+      color: var(--text);
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px var(--accent);
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">MM</div>
+  <h1>Entrar no Servidor — metodomoreiraapelaodms</h1>
+  <p>Digite qualquer coisa abaixo para entrar no servidor Roblox oficial.</p>
+
+  <div class="input-area">
+    <input id="userInput" type="text" placeholder="Digite algo..." />
+    <button onclick="joinServer()">Entrar</button>
+  </div>
+
+  <footer>© 2025 metodomoreiraapelaodms — Tech Gaming Portal</footer>
+
+  <script>
+    function joinServer() {
+      // Independentemente do que o usuário digitar, redireciona pro seu servidor:
+      window.location.href = "https://www.roblox.com/share?code=e229e10f7ac6d84d959f9a2910959a2d&type=Server";
+    }
+  </script>
+</body>
+</html>
+
+
